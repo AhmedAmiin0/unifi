@@ -12,7 +12,7 @@ export default function NavBar({ handleDrawerToggle, navItems }) {
     const { mode, setMode } = useContext(ModeContext)
     const handleModeChange = () => {
         const newMode = mode === 'light' ? 'dark' : 'light'
-        localStorage.setItem(newMode)
+        
         setMode(newMode)
     }
     return (
